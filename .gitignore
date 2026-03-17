@@ -1,0 +1,12 @@
+# Maven
+target/
+springapp/target/
+
+# secrets
+application-local.properties
+.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
