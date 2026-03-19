@@ -4,6 +4,8 @@ import com.examly.springapp.enums.Role;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.EnumType;
@@ -15,11 +17,13 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
-
+    @NotBlank
     private String username;
 
+    @NotBlank @Email
     private String email;
-
+    
+    @NotBlank
     private String password;
 
     private String phoneNumber;

@@ -18,6 +18,6 @@ public class DashboardController {
             @PathVariable Long studentId,
             @PathVariable Long departmentId){
 
-        return dashboardService.getDashboard(studentId,departmentId);
+        return dashboardService.getDashboard(studentId, departmentId);
     }
 }
